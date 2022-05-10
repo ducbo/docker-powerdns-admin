@@ -3,9 +3,9 @@ basedir = os.path.abspath(os.path.abspath(os.path.dirname(__file__)))
 
 ### BASIC APP CONFIG
 SALT = os.environ.get('SALT', '$2b$12$yLUMTIfl21FKJQpTkRQXCu')
-SECRET_KEY = os.environ.get('SECRET_KEY', 'MyAwesomeSecretKey')
+SECRET_KEY = os.environ.get('SECRET_KEY', '2wOj0EEM_MTc7e1HTujI4nhR0DGM9ECJGoplphZTuJ0')
 BIND_ADDRESS = os.environ.get('BIND_ADDRESS', '0.0.0.0')
-PORT = os.environ.get('PORT', '80')
+PORT = os.environ.get('PORT', '8080')
 HSTS_ENABLED = False
 
 LOG_LEVEL = os.environ.get('LOG_LEVEL', 'info')
