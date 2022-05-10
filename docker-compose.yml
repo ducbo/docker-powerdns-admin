@@ -2,11 +2,11 @@ version: "3.7"
 
 services:
   powerdns-admin:
-    image: hsrnetwork/powerdns-admin:latest
+    image: ngoduykhanh/powerdns-admin:latest
     hostname: powerdns-admin
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8080:8080"
     # To override the default config.py:
     #volumes:
       #- /path/to/configs/config.py:/powerdns-admin/config.py
@@ -15,7 +15,7 @@ services:
       ADMIN_USER: admin
       ADMIN_USER_PASSWORD: 12345
       SALT: $$2b$$12$$gmPOvn57H16qlj5kJtJlH.
-      SECRET_KEY: I0o3qqd2eQE859gPpVCGm4EYW4fJTVnGnX2dJZ9YIejq20SJ77tW
+      SECRET_KEY: 2wOj0EEM_MTc7e1HTujI4nhR0DGM9ECJGoplphZTuJ0
       LOG_LEVEL: INFO
       SQLA_DB_HOST: powerdns-admin-mysql
       SQLA_DB_NAME: powerdns-admin
